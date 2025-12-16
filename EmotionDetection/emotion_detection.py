@@ -1,5 +1,5 @@
 """
-This file uses Emotion Predict function of the Watson NLP Library to detect em
+This file uses Emotion Predict function of the Watson NLP Library to detect emotion
 """
 import requests
 import json
