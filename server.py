@@ -14,7 +14,7 @@ def emotion_detector_function():
     text_to_analyze = request.args.get("textToAnalyze")
     result = emotion_detector(text_to_analyze)
     if result["dominant_emotion"] is None:
-        return "Invalid Input. Try Again Later!!"
+        return "Invalid text! Please try again!"
     else:
         return (f"For the given statement, the system response is 'anger': {result['anger']}, "
         f"'disgust': {result['disgust']}, 'fear': {result['fear']}, "
